@@ -113,13 +113,11 @@ class App extends React.Component {
                 />
               ) : null
             )}
-            {checkedSphere || checkedCylinder || checkedAddition ? (
-              <SearchButton
-                onSearch={this.onSearch}
-                darkMode={darkMode}
-                className="searchButton"
-              />
-            ) : null}
+            <SearchButton
+              onSearch={this.onSearch}
+              darkMode={darkMode}
+              className="searchButton"
+            />
           </Grid>
           <Grid className={darkMode ? "serchResult" : "serchResultLight"}>
             <ShowResults results={results} darkMode={darkMode} />
